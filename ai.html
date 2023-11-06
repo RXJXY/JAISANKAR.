@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-image: url("img/LOVE.jpeg");
+  width: 100%;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.proposal-container {
+  background-color: #ff80ab;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+button#accept-button, button#decline-button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button#accept-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button#accept-button:hover {
+  background-color: #45a049;
+}
+
+button#decline-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+button#decline-button:hover {
+  background-color: #d32f2f;
+}
+
+.hidden {
+  display: none;
+}
+
+#ring, #tears {
+  font-size: 60px;
+  margin-top: 20px;
+  color: #ff80ab;
+}
+
+ </style>
+</head>
+<body>
+  <div class="proposal-container">
+    <h1>Will You marry with me?</h1>
+    <p>
+      Dear RANJANA 😍,
+      <br>
+      I can't imagine my life without you, and I want to spend the rest of my days making you happy. Will you make me the happiest person on earth by always friend with me?
+    </p>
+    <button id="accept-button" onclick="showRing()">Yes, I Do!</button>
+    <button id="decline-button" onclick="showTears()">No i need time/button>
+  </div>
+  <div id="ring" class="hidden">💍</div>
+  <div id="tears" class="hidden">😢</div>
+  <script>
+    function showRing() {
+  const ring = document.getElementById('ring');
+  ring.style.display = 'inline';
+}
+
+function showTears() {
+  const tears = document.getElementById('tears');
+  tears.style.display = 'inline';
+}
+
+  </script>
+</body>
+</html>
